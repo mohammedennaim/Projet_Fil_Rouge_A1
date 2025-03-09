@@ -34,5 +34,14 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'facebook' => [
+        'client_id' => $_ENV['FACEBOOK_CLIENT_ID'],
+        'client_secret' => $_ENV['FACEBOOK_CLIENT_SECRET'],
+        'redirect' => $_ENV['FACEBOOK_REDIRECT_URI']
+    ],
+    'google' => [
+        'client_id' => $_ENV['GOOGLE_CLIENT_ID'],
+        'client_secret' => $_ENV['GOOGLE_CLIENT_SECRET'],
+        'redirect' => $_ENV['GOOGLE_REDIRECT_URI']
+    ],
 ];
